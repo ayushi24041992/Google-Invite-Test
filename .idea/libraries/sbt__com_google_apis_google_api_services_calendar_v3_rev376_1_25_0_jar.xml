@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.google.apis:google-api-services-calendar:v3-rev376-1.25.0:jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/com.google.apis/google-api-services-calendar/jars/google-api-services-calendar-v3-rev376-1.25.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/com.google.apis/google-api-services-calendar/srcs/google-api-services-calendar-v3-rev376-1.25.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
