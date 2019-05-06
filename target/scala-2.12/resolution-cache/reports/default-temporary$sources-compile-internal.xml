@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190506141418"/>
+		date="20190506213543"/>
 	<dependencies>
 		<module organisation="com.google.apis" name="google-api-services-calendar">
 			<revision name="v3-rev376-1.25.0" status="release" pubdate="20190426013901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">

@@ -3412,16 +3412,16 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] com.google.oauth-client#google-oauth-client-jetty;1.11.0-beta!google-oauth-client-jetty.jar(src)
-[debug] 	[NOT REQUIRED] com.google.oauth-client#google-oauth-client;1.25.0!google-oauth-client.jar(src)
 [debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
-[debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
-[debug] 	[NOT REQUIRED] javax.activation#activation;1.1!activation.jar(src)
 [debug] 	[NOT REQUIRED] com.google.j2objc#j2objc-annotations;1.1!j2objc-annotations.jar(src)
 [debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
-[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty;6.1.26!jetty.jar(src)
+[debug] 	[NOT REQUIRED] com.google.oauth-client#google-oauth-client;1.25.0!google-oauth-client.jar(src)
+[debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
+[debug] 	[NOT REQUIRED] javax.activation#activation;1.1!activation.jar(src)
 [debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
 [debug] 	[NOT REQUIRED] com.google.guava#guava;20.0!guava.jar(src)
 [debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
+[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty;6.1.26!jetty.jar(src)
 [debug] no default ivy user dir defined: set to /home/knoldus/.ivy2
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
@@ -3430,29 +3430,25 @@
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] no default cache defined: set to /home/knoldus/.ivy2/cache
-[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
-[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
-[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to /home/knoldus/.ivy2/cache
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to /home/knoldus/.ivy2/cache
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] no default cache defined: set to /home/knoldus/.ivy2/cache
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (66ms)
+[debug] settings loaded (30ms)
 [debug] 	default cache: /home/knoldus/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
@@ -3461,63 +3457,67 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (36ms)
+[debug] 	default cache: /home/knoldus/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar(src)
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] 	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar(src)
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (76ms)
-[debug] 	default cache: /home/knoldus/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	[NOT REQUIRED] com.google.http-client#google-http-client;1.25.0!google-http-client.jar(src)
-[debug] 	local [file]
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar(src)
 [debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty-util;6.1.26!jetty-util.jar(src)
-[debug] 	[NOT REQUIRED] org.mortbay.jetty#servlet-api;2.5-20081211!servlet-api.jar(src)
 [debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
-[debug] 	[NOT REQUIRED] org.mnode.ical4j#ical4j;1.0.2!ical4j.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.9.6!jackson-core.jar(src)
-[debug] 	[NOT REQUIRED] javax.mail#mail;1.4.1!mail.jar(src)
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] com.google.http-client#google-http-client-jackson2;1.25.0!google-http-client-jackson2.jar(src)
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
-[debug] 	[NOT REQUIRED] com.google.oauth-client#google-oauth-client-java6;1.11.0-beta!google-oauth-client-java6.jar(src)
-[debug] 	[NOT REQUIRED] com.google.apis#google-api-services-calendar;v3-rev376-1.25.0!google-api-services-calendar.jar(src)
-[debug] settings loaded (73ms)
+[debug] settings loaded (51ms)
 [debug] 	default cache: /home/knoldus/.ivy2/cache
 [debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty-util;6.1.26!jetty-util.jar(src)
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.mortbay.jetty#servlet-api;2.5-20081211!servlet-api.jar(src)
+[debug] 	[NOT REQUIRED] org.mnode.ical4j#ical4j;1.0.2!ical4j.jar(src)
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.9.6!jackson-core.jar(src)
+[debug] 	[NOT REQUIRED] javax.mail#mail;1.4.1!mail.jar(src)
+[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
+[debug] 	[NOT REQUIRED] com.google.http-client#google-http-client;1.25.0!google-http-client.jar(src)
+[debug] 	[NOT REQUIRED] com.google.oauth-client#google-oauth-client-java6;1.11.0-beta!google-oauth-client-java6.jar(src)
+[debug] 	[NOT REQUIRED] backport-util-concurrent#backport-util-concurrent;3.1!backport-util-concurrent.jar(src)
+[debug] 	[NOT REQUIRED] com.google.apis#google-api-services-calendar;v3-rev376-1.25.0!google-api-services-calendar.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.5!httpclient.jar(src)
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (53ms)
+[debug] 	default cache: /home/knoldus/.ivy2/cache
+[debug] 	default resolver: default
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
 [debug] 	default [chain] [local, main]
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.5!httpclient.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.9!httpcore.jar(src)
 [debug] 	[NOT REQUIRED] com.google.api-client#google-api-client;1.25.0!google-api-client.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] settings loaded (72ms)
-[debug] 	default cache: /home/knoldus/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	[NOT REQUIRED] backport-util-concurrent#backport-util-concurrent;3.1!backport-util-concurrent.jar(src)
-[debug] 	-- 5 resolvers:
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (75ms)
+[debug] including url: jar:file:/home/knoldus/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.9!httpcore.jar(src)
+[debug] settings loaded (73ms)
+[debug] settings loaded (61ms)
 [debug] 	default cache: /home/knoldus/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
@@ -3526,7 +3526,7 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] settings loaded (84ms)
+[debug] 	[NOT REQUIRED] com.google.http-client#google-http-client-jackson2;1.25.0!google-http-client-jackson2.jar(src)
 [debug] 	default cache: /home/knoldus/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
@@ -3535,7 +3535,7 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] :: resolution report :: resolve 1065ms :: artifacts dl 112ms
+[debug] :: resolution report :: resolve 3729ms :: artifacts dl 102ms
 [debug] 	report for default#temporary$sources;0.1 compile produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-compile.xml
 [debug] 	report for default#temporary$sources;0.1 runtime produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-runtime.xml
 [debug] 	report for default#temporary$sources;0.1 test produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-test.xml
@@ -3547,4 +3547,4 @@
 [debug] 	report for default#temporary$sources;0.1 plugin produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-plugin.xml
 [debug] 	report for default#temporary$sources;0.1 pom produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-pom.xml
 [debug] 	report for default#temporary$sources;0.1 scala-tool produced in /home/knoldus/temporary/target/scala-2.12/resolution-cache/reports/default-temporary$sources-scala-tool.xml
-[debug] 	resolve done (1065ms resolve - 112ms download)
+[debug] 	resolve done (3729ms resolve - 102ms download)

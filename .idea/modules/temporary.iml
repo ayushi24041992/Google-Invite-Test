@@ -15,28 +15,28 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.8:jar" level="project" />
-    <orderEntry type="library" name="sbt: javax.mail:mail:1.4.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: javax.activation:activation:1.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.mortbay.jetty:servlet-api:2.5-20081211:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.mortbay.jetty:jetty-util:6.1.26:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.mortbay.jetty:jetty:6.1.26:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client-jetty:1.11.0-beta:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client-java6:1.11.0-beta:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.9.6:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.api-client:google-api-client:1.25.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.apis:google-api-services-calendar:v3-rev376-1.25.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.code.findbugs:jsr305:3.0.2:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.guava:guava:20.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.http-client:google-http-client:1.25.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.http-client:google-http-client-jackson2:1.25.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.j2objc:j2objc-annotations:1.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client:1.25.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-codec:commons-codec:1.10:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-logging:commons-logging:1.2:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpclient:4.5.5:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpcore:4.4.9:jar" level="project" />
-    <orderEntry type="library" name="sbt: backport-util-concurrent:backport-util-concurrent:3.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-lang:commons-lang:2.6:jar" level="project" />
     <orderEntry type="library" name="sbt: org.mnode.ical4j:ical4j:1.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-lang:commons-lang:2.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: backport-util-concurrent:backport-util-concurrent:3.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpcore:4.4.9:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpclient:4.5.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-logging:commons-logging:1.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-codec:commons-codec:1.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client:1.25.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.j2objc:j2objc-annotations:1.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.http-client:google-http-client-jackson2:1.25.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.http-client:google-http-client:1.25.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.guava:guava:20.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.code.findbugs:jsr305:3.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.apis:google-api-services-calendar:v3-rev376-1.25.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.api-client:google-api-client:1.25.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.9.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client-java6:1.11.0-beta:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.oauth-client:google-oauth-client-jetty:1.11.0-beta:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mortbay.jetty:jetty:6.1.26:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mortbay.jetty:jetty-util:6.1.26:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.mortbay.jetty:servlet-api:2.5-20081211:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.activation:activation:1.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.mail:mail:1.4.1:jar" level="project" />
   </component>
 </module>

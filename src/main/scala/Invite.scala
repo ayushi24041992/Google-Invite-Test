@@ -1,6 +1,6 @@
 import net.fortuna.ical4j.model.Calendar
 import net.fortuna.ical4j.model.DateTime
-import net.fortuna.ical4j.model.component.VEvent
+import net.fortuna.ical4j.model.component.{VEvent, VTimeZone, VToDo}
 import net.fortuna.ical4j.model.property.{Version, _}
 import net.fortuna.ical4j.util.UidGenerator
 import java.util.Properties
@@ -60,15 +60,18 @@ class Invite {
       calendar.getProperties.add(new ProdId("-//Google Inc//Google Calendar 70.9054//EN"))
       calendar.getProperties.add(Version.VERSION_2_0)
       calendar.getProperties.add(CalScale.GREGORIAN)
+      calendar.getProperties.add(Method.REQUEST)
 
       // initialise as an all-day event..
-      val fromDate = new DateTime(1557153079000L)
+      val fromDate = new DateTime(1557163800000L)
       fromDate.setUtc(true)
-      val toDate = new DateTime(1557153139000L)
+      val toDate = new DateTime(1557166800000L)
       toDate.setUtc(true)
       val meeting = new VEvent(fromDate, toDate, "Booking Confirmation Invite")
+      val organizer = new Organizer("hasijaayushi@knoldus.in")
+      meeting.getProperties.add(organizer)
 
-      val state = new Status("NEEDS-ACTION")
+      val state = new Status("VEVENT_CONFIRMED")
       meeting.getProperties.add(state)
 
       // Generate a UID for the event..
@@ -96,17 +99,12 @@ class Invite {
 
       calendar.getComponents.add(meeting)
 
-      println(meeting)
+      println(calendar.getComponents)
 
 
       // Create the message part
       val messageBodyPart = new MimeBodyPart
       // Fill the message
-      messageBodyPart.setHeader("Content-Type", "application/ics")
-      messageBodyPart.setHeader("name","invite.ics")
-      messageBodyPart.setHeader("Content-Disposition","attachment")
-      messageBodyPart.setHeader("filename","invite.ics")
-      messageBodyPart.setHeader("method","REQUEST")
       messageBodyPart.setHeader("Content-Class", "urn:content-  classes:calendarmessage")
       messageBodyPart.setHeader("Content-ID", "calendar_message")
       messageBodyPart.setDataHandler(new DataHandler(new ByteArrayDataSource(calendar.toString, "text/calendar"))) // very important
