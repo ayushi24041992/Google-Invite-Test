@@ -4,7 +4,7 @@
 		module="temporary_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190506141327"
+		publication="20190507155250"
 	>
 		<description>
 		temporary
@@ -36,6 +36,6 @@
 		<dependency org="com.google.oauth-client" name="google-oauth-client-jetty" rev="1.11.0-beta" conf="compile->default(compile)"/>
 		<dependency org="com.google.api-client" name="google-api-client" rev="1.23.0" conf="compile->default(compile)"/>
 		<dependency org="javax.mail" name="mail" rev="1.4.1" conf="compile->default(compile)"/>
-		<dependency org="org.mnode.ical4j" name="ical4j" rev="1.0.2" conf="compile->default(compile)"/>
+		<dependency org="org.mnode.ical4j" name="ical4j" rev="3.0.6" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

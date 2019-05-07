@@ -83,8 +83,8 @@ import javax.mail.util.ByteArrayDataSource;
 
 
                 // Generate a UID for the event..
-                UidGenerator ug = new UidGenerator("RAP");
-                christmas.getProperties().add(ug.generateUid());
+         /*       UidGenerator ug = new UidGenerator("RAP");
+                christmas.getProperties().add(ug.generateUid());*/
                 calendar.getComponents().add(christmas);
 
                 Status state = new Status("NEEDS-ACTION");

@@ -1,20 +1,21 @@
-import net.fortuna.ical4j.model.{Calendar, DateTime, ParameterList}
-import net.fortuna.ical4j.model.component.{VEvent, VTimeZone, VToDo}
-import net.fortuna.ical4j.model.property.{Version, _}
-import net.fortuna.ical4j.util.UidGenerator
-import java.util.Properties
+import java.net.URI
+import java.util.{Properties, UUID}
 
 import javax.activation.DataHandler
 import javax.mail._
-import javax.mail.internet._
+import javax.mail.internet.{InternetAddress, MimeBodyPart, MimeMessage, MimeMultipart}
 import javax.mail.util.ByteArrayDataSource
-import net.fortuna.ical4j.model.parameter.{CuType, PartStat, Rsvp}
+import net.fortuna.ical4j.model.{Calendar, DateTime}
+import net.fortuna.ical4j.model.component.VEvent
+import net.fortuna.ical4j.model.property._
+import net.fortuna.ical4j.model.parameter.CuType
+import net.fortuna.ical4j.model.parameter.Rsvp
+import net.fortuna.ical4j.model.parameter.PartStat
 
-
-object Invite {
+object InviteWithLatestVersion {
   def main(args: Array[String]): Unit = {
     try {
-      val invite = new Invite
+      val invite = new InviteWithLatestVersion
       invite.send()
     } catch {
       case e: Exception =>
@@ -23,12 +24,13 @@ object Invite {
   }
 }
 
-class Invite {
-  @throws[Exception]
+
+class InviteWithLatestVersion {
+
   def send(): Unit = {
     try {
 
-      val from = "hasijaayushi@gmail.com"
+      val from = "sakshi.hasija24@gmail.com"
       val to = "ayushi.hasija@knoldus.in"
       val prop = new Properties
       prop.put("mail.smtp.auth", "true")
@@ -40,117 +42,79 @@ class Invite {
       val session = Session.getInstance(prop, new Authenticator() {
         override protected def getPasswordAuthentication = new PasswordAuthentication(username, password)
       })
-      // Define message
 
       val message = new MimeMessage(session)
       message.addHeaderLine("method=REQUEST")
       message.addHeaderLine("charset=UTF-8")
       message.addHeaderLine("Content-Transfer-Encoding=7bit")
       message.addHeaderLine("component=VEVENT")
-
       message.setFrom(new InternetAddress(from))
       message.addRecipient(Message.RecipientType.TO, new InternetAddress(to))
       message.setSubject("******Calendar Invite***************")
-
-
 
       val calendar = new Calendar
       calendar.getProperties.add(new ProdId("-//Google Inc//Google Calendar 70.9054//EN"))
       calendar.getProperties.add(Version.VERSION_2_0)
       calendar.getProperties.add(CalScale.GREGORIAN)
       calendar.getProperties.add(Method.REQUEST)
-
-      /*val timezone = new VTimeZone()
-      timezone.getProperties().add(new TzId("Asia/Kolkata"))*/
       calendar.getProperties.add(new TzId("Asia/Kolkatta"))
 
-      // initialise as an all-day event..
-      val fromDate = new DateTime(1557226800000L)
+      val fromDate = new DateTime(1557234600000L)
       fromDate.setUtc(true)
-      val toDate = new DateTime(1557230400000L)
+      val toDate = new DateTime(1557235200000L)
       toDate.setUtc(true)
       val meeting = new VEvent(fromDate, toDate, "Booking Confirmation Invite")
-      val organizer = new Organizer("mailto:hasijaayushi@gmail.com")
+
+      val organizer = new Organizer("mailto:sakshi.hasija24@gmail.com")
       meeting.getProperties.add(organizer)
+      meeting.getProperties.add(new Uid(UUID.randomUUID().toString))
 
-      //val state = new Status("CONFIRMED")
-      //meeting.getProperties.add(state)
-
-      // Generate a UID for the event..
-    /*  val ug = new UidGenerator("RAP")
-      meeting.getProperties.add(ug.generateUid)*/
-
-      val location = new Location("bravoos")
+      val location = new Location("bravos")
       meeting.getProperties.add(location)
 
-
-
-     // val transp = new Transp("OPAQUE")
-     // meeting.getProperties.add(transp)
-
       import net.fortuna.ical4j.model.parameter.Cn
-      import net.fortuna.ical4j.model.parameter.Role
       import net.fortuna.ical4j.model.property.Attendee
       import java.net.URI
-      // add attendees..// add attendees..
-/*
-      val dev1 = new Attendee(URI.create("mailto:ayushi.hasija@knoldus.in"))
-      dev1.getParameters.add(CuType.INDIVIDUAL)
-      dev1.getParameters.add(Role.REQ_PARTICIPANT)
+
+      val dev1 = new Attendee("mailto:ayushi.hasija@knoldus.in")
       dev1.getParameters.add(PartStat.NEEDS_ACTION)
-      dev1.getParameters.add(new Cn("ayushi.hasija@knoldus.in"))
       dev1.getParameters.add(Rsvp.TRUE)
+      dev1.getParameters.add(CuType.INDIVIDUAL)
+      dev1.getParameters.add(new Cn("Developer 1"))
       meeting.getProperties.add(dev1)
 
-      val dev2 = new Attendee(URI.create("mailto:bhawna@knoldus.in"))
-      dev2.getParameters.add(CuType.INDIVIDUAL)
-      dev2.getParameters.add(Role.REQ_PARTICIPANT)
+      val dev2 = new Attendee("mailto:hasijaayushi@gmail.com")
       dev2.getParameters.add(PartStat.NEEDS_ACTION)
-      dev2.getParameters.add(new Cn("bhawna@knoldus.in"))
       dev2.getParameters.add(Rsvp.TRUE)
+      dev2.getParameters.add(CuType.INDIVIDUAL)
+      dev2.getParameters.add(new Cn("Developer 2"))
       meeting.getProperties.add(dev2)
-      import net.fortuna.ical4j.model.parameter.Cn
-*/
-      import net.fortuna.ical4j.model.parameter.CuType
-      import net.fortuna.ical4j.model.parameter.Rsvp
-      import net.fortuna.ical4j.model.parameter.PartStat
-      import net.fortuna.ical4j.model.property.Attendee
 
-      val parameterList = new ParameterList
-      parameterList.add(CuType.INDIVIDUAL)
-      parameterList.add(Role.REQ_PARTICIPANT)
-      parameterList.add(new PartStat("NEEDS-ACTION"))
+   /*   val parameterList = new ParameterList
+      parameterList.add(PartStat.NEEDS_ACTION)
       parameterList.add(Rsvp.TRUE)
-      parameterList.add(new Cn("dynamic"))
-
-      meeting.getProperties().add(new Attendee(parameterList, "mailto:ayushi.hasija@knoldus.in"))
-      meeting.getProperties().add(new Attendee(parameterList, "mailto:bhawna@knoldus.in"))
-      meeting.getProperties().add(new Attendee(parameterList, "mailto:sakshi.hasija24@gmail.com"))
+      parameterList.add(CuType.INDIVIDUAL)
+      meeting.getProperties().add(new Attendee(parameterList, URI.create("mailto:ayushi.hasija@knoldus.in")))
+      meeting.getProperties().add(new Attendee(parameterList, URI.create("mailto:bhawna@knoldus.in")))
+      meeting.getProperties().add(new Attendee(parameterList, URI.create("mailto:sakshihasija24@gmail.com")))*/
+      meeting.getProperties().add(Status.VEVENT_CONFIRMED)
+      meeting.getProperties().add(new Sequence(0))
 
       calendar.getComponents.add(meeting)
 
       println(calendar.getComponents)
-
-
-      // Create the message part
       val messageBodyPart = new MimeBodyPart
-      // Fill the message
-     // messageBodyPart.setHeader("Content-Class", "urn:content-  classes:calendarmessage")
-   //   messageBodyPart.setHeader("Content-ID", "calendar_message")
+
       messageBodyPart.setHeader("charset", "UTF-8")
       messageBodyPart.setHeader("Content-Transfer-Encoding","7bit")
       messageBodyPart.setDataHandler(new DataHandler(new ByteArrayDataSource(calendar.toString, "text/calendar;Content-Type= \"application/ics\";" +
         "Content-Disposition= \"attachment\";filename=\"invite.ics\";Content-Transfer-Encoding= \"base64\""))) // very important
 
-      // Create a Multipart
-      val multipart = new MimeMultipart
 
-      // Add part one
+      val multipart = new MimeMultipart
       multipart.addBodyPart(messageBodyPart)
-      // Put parts in message
       message.setContent(multipart)
       Transport.send(message)
-
       System.out.println("Success")
     } catch {
       case me: MessagingException =>
@@ -159,6 +123,5 @@ class Invite {
         ex.printStackTrace()
     }
   }
+
 }
-
-

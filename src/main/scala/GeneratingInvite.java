@@ -24,9 +24,9 @@ public class GeneratingInvite {
         VEvent christmas = new VEvent(new Date(cal.getTime()), "Christmas Day");
 
 
-        // Generate a UID for the event..
+     /*   // Generate a UID for the event..
         UidGenerator ug = new UidGenerator("RAP");
-        christmas.getProperties().add(ug.generateUid());
+        christmas.getProperties().add(ug.generateUid());*/
         Status state = new Status("NEEDS-ACTION");
         christmas.getProperties().add(state);
         calendar.getComponents().add(christmas);
